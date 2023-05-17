@@ -1,0 +1,54 @@
+.html {
+  font-family: "Meiryo", sans-serif;
+}
+
+.container {
+  background-color: orange;
+  height: cover;
+  width: 3000px;
+  font-size: 25px;
+}
+
+.item {
+  vertical-align: middle;
+  margin-left: 375px; /*アイテム（子要素）の位置を左から375pxを指定して子要素が真ん中に表示されるように設定した。（デバイスによって左寄りになった）*/
+  text-align: center;
+  background-color: yellow;
+  height: cover;
+  width: 700px;
+}
+
+.name {
+  width: 50%;
+  padding: 1em 0.5em; /*最初の1emは親要素のフォントサイズ(=30px)と同じ大きさのpaddingを上下に指定して、0.5pxは左右に対しての指定。この値がテキストボックスに入力した文字のパディングとして確保される*/
+  line-height: 1;  /*ここの数値を変えることで、テキストボックスの周りの線の高さが変わる。*/
+  font-size: 15px;
+}
+
+.age {
+  width: 50%;
+  padding: 1em 0.5em;
+  line-height: 2;
+}
+
+#sentaku {
+  font-size: 20px;
+}
+
+.impression {
+  width: 100%;
+  padding: 1em 0.5em;
+  line-height: 1;
+}
+
+#submission { 
+  width: 25%;
+  padding: 1em 0.5em;
+  line-height: 1;
+  text-align: center;
+}
+
+.backtohome {
+  text-align: left;
+  margin-left: 20px;
+}

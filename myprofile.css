@@ -1,0 +1,160 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0px;
+}
+
+
+#menubar {
+  background-color: #696969;
+  height: 77px;
+  width: 1500px;
+  text-align: right;
+  color: white;  /*文字色を白に設定したが青になってしまう…*/
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.menubarcontent a:link {
+  color: white;
+}
+
+.menubarcontent a:visited {
+  color: white;
+}
+
+.menubarcontent a:hover {
+  color: pink;
+}
+
+.menubarcontent a:active {
+  color: pink;
+}
+
+.basicinfoa {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.basicinfo1 {
+  background-color: #f0fff0;   /*メインタグに対して背景色を設定しても色は変わらず、basicinfoというdiv要素（id名）もしくはbasicinfo1というdivクラス名に対して背景色を設定したら色が変化した。*/
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.basicinfo1 h1 {
+  font-size: 50px;
+}
+
+.basicinfo1 p {
+  margin-top: 1px;
+  font-size: 25px;
+}
+
+.basicinfo1 p::before {
+  content: "◆";
+  color: purple;
+}
+
+.basicinfo1 span {
+  color: red;
+}
+
+#container {
+  background-color: #fff0f5;
+  background-size: cover;
+  height: 2500px;
+  margin-top: 0px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#container h1{
+  font-size: 50px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+#container h2 {
+  font-size: 30px;
+}
+
+.item01 {
+  width: 300px;
+  height: 300px;
+  background-color: none;
+  border: solid 5px red;
+}
+
+.item01 h2 {
+  text-align: center;   /*Instagramのロゴ（img）を赤枠ボックスの中心に配置したい。下の行に指定した。*/
+}
+
+.item01 img {
+  display: block;    /*imgタグ（インスタのロゴ）に対してdiplay: blockにして、margin:auto;にしたら赤枠の中心に配置された*/
+  margin: auto;
+}
+
+.item02 {
+  height: 300px;
+  width: 300px;
+  background-color: none;
+  border: solid 5px yellow;
+}
+
+.item02 h2{
+  text-align: center;
+}
+
+.item02 img {
+  display: block;
+  margin: auto;
+}
+
+.item03 {
+  height: 300px;
+  width: 300px;
+  background-color: none;
+  border: solid 5px blue;
+}
+
+.item03 h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.item03 p {
+  margin-top: 0px;
+}
+
+.item03 img{
+  display: block;
+  margin: auto;
+  height: 170px;
+  width: 170px;
+}
+
+.item03 p {
+  padding: 0px;
+  margin: 1px;
+}
+
+.item03 iframe {
+  display: block;
+  margin: auto;
+}
+
+/*以下のCSSはワークしない*/
+.fist img {
+  width: 90px;   /*firstクラスの中にあるimgタグに対して、画像の大きさをCSSで指定しても反応しない。HTMLで指定しないとダメ*/
+  height: 90px;
+}
+
+
