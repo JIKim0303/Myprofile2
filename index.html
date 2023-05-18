@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>私のプロフィール</title>
+    <meta name="description" content="これまで習った内容を活かして私のプロフィールを作成しました。">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="myprofile.css">
+  </head>
+  <body>
+      <header>
+      <div class="menu">
+        <div id="menubar">
+          <div class="menubarcontent"> <!--このセクションをページ上部左側に固定する。position: fixed;で上と右から0pxを指定する-->
+            <a href="C:\Users\j_ino\OneDrive\デスクトップ\lesson\Myprofile/myprofile.html">Home</a>
+            <a href="#">History</a>  <!--別のページを作成して自分の沿革ページを作る。後日つくる-->
+            <a href="C:\Users\j_ino\OneDrive\デスクトップ\lesson/Myprofile/contact.html">Contact</a>  <!--別のページを作成して問い合わせページを作成する-->
+            <a href="C:\Users\j_ino\OneDrive\デスクトップ\lesson/Myprofile/Questionnaire.html">Questionnaire</a>  <!--別のページを作成してアンケートページを作成する-->
+        </div>
+      </div>
+      </header>
+
+      <main>
+        <div class="basicinfoa">
+          <section class="basicinfo1">
+          <h1>My Profile</h1> <!--この見出しを中央配置にする-->
+          <p>名前：井上　純子</p>  <!--このp段落に対して::before改行content: "◆";のスタイルを適用する-->
+          <p>生年月日：1991年3月3日</p>
+          <p>血液型：A型</p>
+          <p>出身地：神奈川県</p>
+          <p>趣味：Netflix鑑賞、ジムで運動、推し活、旅行</p>
+          <p>好きなアーティスト：BTS</p>
+          <p>好きな食べ物：韓国料理（特にビビンバやチヂミ<span>♡</span>）</p>
+          </section>
+        </div>
+
+      <div id="container">  
+        <h1>SNS</h1><br><br><br>  <!--SNSのリンクをすべて横並びにする。見出しは中央配置にするdisplayプロパティでinline-blockを指定する-->
+        <div class="container2">  
+        <div class="item01">  <!--背景色を薄い赤色にする。-->
+            <h2>Instagram</h2><br> 
+            <a href="https://www.instagram.com/jnk33kim"><img src="C:\Users\j_ino\OneDrive\デスクトップ\lesson\Myprofile2/instagram logo.png" width="200px" height="150px"></a>
+            <!--インスタグラムの見出しとiframeを中央配置にする-->
+          </div>
+
+          <div class="item02">  <!--背景色を薄い黄色にする-->
+            <h2>Facebook</h2>
+            <a href="https://www.facebook.com/junko.inoue.71"><img src="C:\Users\j_ino\OneDrive\デスクトップ\lesson\Myprofile2/facebooklogo2.png" width="200px" height="200"></a>
+            <!--FBの見出しとiframeを中央配置にする-->
+          </div>
+
+          <div class="item03">  <!--背景色を薄い青色にする-->
+            <h2>Youtube</h2>
+            <p>大学時代ダンス部に所属していてHiphopを習っていました。</p>
+            <a href="https://www.youtube.com/watch?v=lmJao92PBSE&t=1s"><img src="C:\Users\j_ino\OneDrive\デスクトップ\lesson/Myprofile2/youtube.png"></a><!--youtubeの見出しとiframeをitem03の中で中央配置にする。Youtubeのサムネイル表示ができない。-->
+          </div>    
+        </div>
+      </div>
+
+      </main>
+      <footer>
+      </footer>
+
+      </body>
+
+
+</html>
