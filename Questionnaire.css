@@ -51,4 +51,21 @@
 .backtohome {
   text-align: left;
   margin-left: 20px;
+  font-size: 20px;
+}
+
+.backtohome a:link {
+  color: lightgreen;
+}
+
+.backtohome a:visited {
+  color: lightgreen;
+}
+
+.backtohome a:hover {
+  color: white;
+}
+
+.backtohome a:active {
+  color: white;
 }
