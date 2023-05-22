@@ -1,14 +1,4 @@
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-}
-
-@media screen and (min-width: 1024px){
-}
-
-@media screen and (max-width: 768px) {
-  display: inline-block;
-}
-
 .menu {
   position: fixed;
   top: 0;
@@ -80,17 +70,17 @@
   margin-top: 0px;
 }
 
-.container2 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 #container h1{
   font-size: 50px;
   margin-top: 1px;
   margin-bottom: 1px;
   text-align: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #container h2 {
