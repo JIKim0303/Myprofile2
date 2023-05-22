@@ -1,9 +1,5 @@
-@media screen and (max-width: 768px) {
- display: block;
- }
-}
 
-@media screen and (min-width: 768px) and max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 }
 
 @media screen and (min-width: 1024px){
@@ -161,6 +157,11 @@
 .item03 iframe {
   display: block;
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+ display: block;
+ }
 }
 
 /*以下のCSSはワークしない*/
