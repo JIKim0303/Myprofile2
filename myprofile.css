@@ -5,7 +5,6 @@
 @media screen and (min-width: 1024px){
 }
 
-
 .menu {
   position: fixed;
   top: 0;
@@ -15,9 +14,8 @@
 
 
 #menubar {
-  background-color: #696969;
+  background-color: #696969; /*widthを何も指定しなければ画面幅いっぱいに背景色が広がる*/
   height: 77px;
-  width: 1500px;
   text-align: right;
   color: white;  /*文字色を白に設定したが青になってしまう…*/
   font-size: 30px;
@@ -42,7 +40,7 @@
 
 .basicinfoa {
   margin-top: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .basicinfo1 {
@@ -161,8 +159,7 @@
 }
 
 @media screen and (max-width: 768px) {
- display: block;
- }
+  display: block;
 }
 
 /*以下のCSSはワークしない*/
