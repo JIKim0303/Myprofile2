@@ -108,6 +108,7 @@
   width: 300px;
   background-color: none;
   border: solid 5px yellow;
+  display: flex;
 }
 
 .item02 h2{
