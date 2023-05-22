@@ -7,10 +7,12 @@
   height: cover;
   width: 3000px;
   font-size: 25px;
+  display: flex;
 }
 
 .item {
-  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
   margin-left: 375px; /*アイテム（子要素）の位置を左から375pxを指定して子要素が真ん中に表示されるように設定した。（デバイスによって左寄りになった）*/
   text-align: center;
   background-color: yellow;
