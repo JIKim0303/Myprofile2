@@ -5,6 +5,10 @@
 @media screen and (min-width: 1024px){
 }
 
+@media screen and (max-width: 768px) {
+  display: inline-block;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -77,8 +81,8 @@
 }
 
 .container2 {
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -158,9 +162,7 @@
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-  display: block;
-}
+
 
 /*以下のCSSはワークしない*/
 .fist img {
