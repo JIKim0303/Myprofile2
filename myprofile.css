@@ -99,11 +99,6 @@
   border: solid 5px red;
 }
 
-.item01 img {
-  width: 50px;
-  height: 50px;
-}
-
 .item01 h2 {
   text-align: center;   /*Instagramのロゴ（img）を赤枠ボックスの中心に配置したい。下の行に指定した。*/
 }
