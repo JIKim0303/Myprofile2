@@ -117,7 +117,8 @@
 }
 
 .item02 img{
-  display: block;
+  display: block;  /*item02で指定したdisplay: block;を削除して、イメージ要素に対してblockをつけた。*/
+  margin: 0 auto;
 }
 
 .item03 {
