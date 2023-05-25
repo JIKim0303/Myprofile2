@@ -107,6 +107,8 @@
 .item01 img {
   display: block;    /*imgタグ（インスタのロゴ）に対してdiplay: blockにして、margin:auto;にしたら赤枠の中心に配置された*/
   margin: 0 auto;
+  width: 200px;
+  height: 200px;
 }
 
 .item02 {
