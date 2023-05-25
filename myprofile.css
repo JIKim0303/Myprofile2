@@ -135,7 +135,7 @@
 .item03 img{
   display: block;
   margin: 0 auto;
-  height: 170px;
+  height: 150px;
   width: 170px;
 }
 
@@ -144,7 +144,7 @@
   margin: 1px;
 }
 
-.item03 iframe {
+.item03 iframe {   /*iframeはやめたためこのコードは無効。*/
   display: block;
   margin: auto;
 }
