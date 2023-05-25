@@ -99,8 +99,9 @@
   border: solid 5px red;
 }
 
-.item01 h2 {
-  text-align: center;   /*Instagramのロゴ（img）を赤枠ボックスの中心に配置したい。下の行に指定した。*/
+#heading {
+  text-align: center;    /*SNSの各h2タグにidを付けてまとめて枠の中央配置にした。*/
+  margin-bottom: 0px;
 }
 
 .item01 img {
@@ -116,21 +117,11 @@
   display: flex;
 }
 
-.item02 h2{
-  text-align: center;
-}
-
-
 .item03 {
   height: 300px;
   width: 300px;
   background-color: none;
   border: solid 5px blue;
-}
-
-.item03 h2 {
-  text-align: center;
-  margin-bottom: 0px;
 }
 
 .item03 p {
