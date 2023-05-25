@@ -10,12 +10,11 @@
   height: cover;
   width: 3000px;
   font-size: 25px;
-  display: flex;
-  justify-content: center;
 }
 
 .item {
-  align-items: center;
+  display: block;
+  margin: 0 auto;
   text-align: center;
   background-color: yellow;
   height: cover;
