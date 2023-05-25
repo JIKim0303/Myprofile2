@@ -87,23 +87,21 @@
   font-size: 30px;
 }
 
-.fa {
-  text-align: center;
-  text-decoration: none;
-}
-
 /*add a hover effect*/
-.fa:hover {  /*それぞれのSNSのアイコンに対してopacityを指定する。*/
+#logos:hover {  /*それぞれのSNSのアイコンに対してopacityを指定する。*/
   opacity: 0.7;
 }
-
-/*set specific color for each brand*/
 
 .item01 {
   width: 300px;
   height: 300px;
   background-color: none;
   border: solid 5px red;
+}
+
+.item01 img {
+  width: 50px;
+  height: 50px;
 }
 
 .item01 h2 {
