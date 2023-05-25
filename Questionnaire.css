@@ -11,10 +11,10 @@
   width: 3000px;
   font-size: 25px;
   display: flex;
+  justify-content: center;
 }
 
 .item {
-  justify-content: center;
   align-items: center;
   text-align: center;
   background-color: yellow;
