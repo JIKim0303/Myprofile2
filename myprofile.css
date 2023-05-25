@@ -116,6 +116,10 @@
   border: solid 5px yellow;  /*この行の下にdisplay: flex;と記述したことで、h2要素とimg要素が横並びになったようなので削除した。*/
 }
 
+.item02 img{
+  display: block;
+}
+
 .item03 {
   height: 300px;
   width: 300px;
