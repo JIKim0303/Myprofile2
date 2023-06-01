@@ -15,8 +15,8 @@
   .container {
     background-color: red;
     height: cover;
-    width: 70%;
-    font-size: 0.5rem;
+    width: 717px;
+    font-size: 12px;
   }
 }
 
@@ -24,7 +24,7 @@
   .container {
     background-color: red;
     height: cover;
-    width: 40%;
+    width: 410px;
     font-size: 0.4rem;
   }
 }
