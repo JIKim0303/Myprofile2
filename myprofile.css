@@ -14,6 +14,11 @@
   color: white;  /*文字色を白に設定したが青になってしまう…*/
   font-size: 30px;
   margin-bottom: 20px;
+}@media screen and (min-width:480px) {
+  #manubar {
+    height: 50%;
+    font-size: 50%;
+  }
 }
 
 .menubarcontent a:link {
