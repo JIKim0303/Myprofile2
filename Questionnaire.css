@@ -72,3 +72,10 @@
 .backtohome a:active {
   color: white;
 }
+
+
+@media screen and (max-width:480px) {
+ .textarea {
+  width: 50%;
+ }
+}
