@@ -2,14 +2,12 @@
   font-family: "Meiryo", sans-serif;
 }
 
-@media screen and (max-width: 1025px) {
   .container {
     background-color: pink;
     height: cover;
     width: 1025px;
     font-size: 25px;
   }
-}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -35,7 +33,7 @@
 
 @media screen and (max-width: 480px) {
   .container h1 {
-    font-size: 0.4rem;
+    font-size: 20px;
   }
 }
 
@@ -45,7 +43,31 @@
   text-align: center;
   background-color: white;
   height: cover;
-  width: 70%;
+  width: 717px;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+    height: cover;
+    width: 500px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+    height: cover;
+    width: 358px;
+    font-size: 10px;
+  }
 }
 
 .name {
