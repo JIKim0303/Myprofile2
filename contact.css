@@ -5,7 +5,8 @@
 .container {
   background-color: pink;
   height: cover;
-  width: 3000px;
+  width: 100%;
+  font-size: 25px;
 }
 
 .container h1 {
@@ -13,13 +14,12 @@
 }
 
 .item {
-  vertical-align: middle;
-  margin-left: 375px;
+  display: block;
+  margin: 0 auto;
   text-align: center;
   background-color: white;
   height: cover;
-  width: 700px;
-  font-size: 25px;
+  width: 70%;
 }
 
 .name {
