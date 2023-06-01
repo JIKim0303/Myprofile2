@@ -52,6 +52,10 @@
 
 .basicinfo1 h1 {
   font-size: 50px;
+}@media screen and(max-width:480px) {
+  .basicinfo1 h1 {
+    font-size: 50%;
+  }
 }
 
 .basicinfo1 p {
