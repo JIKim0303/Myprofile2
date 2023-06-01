@@ -5,7 +5,7 @@
 .container {
   background-color: pink;
   height: cover;
-  width: 100%;
+  width: 100vh;
   font-size: 25px;
 }
 
