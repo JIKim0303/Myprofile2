@@ -2,11 +2,22 @@
   font-family: "Meiryo", sans-serif;
 }
 
-.container {
-  background-color: pink;
-  height: cover;
-  width: 1280px;
-  font-size: 25px;
+@media screen and (max-width: 1025px) {
+  .container {
+    background-color: pink;
+    height: cover;
+    width: 1025px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: red;
+    height: cover;
+    width: 70%;
+    font-size: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
