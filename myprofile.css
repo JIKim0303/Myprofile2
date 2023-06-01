@@ -159,4 +159,10 @@
   height: 90px;
 }
 
+/*画面が480px以下の場合は背景色を赤色にする（テスト）*/
+@media screen(max-width: 480px) {
+  .body {
+    back-ground-color: red;
+  }
+}
 
