@@ -76,8 +76,20 @@
  .textarea {
   width: 50%;
  }
- .body {
-  font-size: 50%;
- }
 }
 
+@media screen and (max-width:480px) {
+  .container {
+    font-size: 50%;
+  }
+  .name {
+    font-size: 50%]
+  }
+  #sentaku {
+    font-size: 50%;
+  }
+  .backtohome {
+    font-size: 50%;
+  }
+}
+    
