@@ -163,11 +163,7 @@
 @media screen(max-width: 480px) {
   .body {
     back-ground-color: red;
-  }
-}
-
-@media screen(max-width: 480px) {
-  .body {
+    width: 50%;
     font-size: 50%;
   }
 }
