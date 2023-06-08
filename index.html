@@ -5,26 +5,23 @@
     <meta name="description" content="これまで習った内容を活かして私のプロフィールを作成しました。">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="myprofile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="myprofile.css"> 
   </head>
 
   <body>
       <header>
-      <div class="menu">
-        <div id="menubar">
-          <div class="menubarcontent"> <!--このセクションをページ上部左側に固定する。position: fixed;で上と右から0pxを指定する-->
-            <a href="/Myprofile2">Home</a>
-            <a href="#">History</a>  <!--別のページを作成して自分の沿革ページを作る。後日つくる-->
-            <a href="/Myprofile2/contact.html">Contact</a>  <!--別のページを作成して問い合わせページを作成する-->
-            <a href="/Myprofile2/Questionnaire.html">Questionnaire</a>  <!--別のページを作成してアンケートページを作成する-->
-        </div>
-      </div>
+        <nav>
+          <ul>
+            <li><a href="/Myprofile2">Home</a></li>
+            <li><a href="#">History</a></li>　　　　　<!--中身は作らない--!>
+            <li><a href="/Myprofile2/contact.html">Contact</a></li>
+            <li><a href="/Myprofile2/Questionnaire.html">Questionnaire</a></li>
+          </ul>
+       </nav>        
       </header>
 
       <main>
-        <div class="basicinfoa">
-          <section class="basicinfo1">
+        <article class="profile">
           <h1>My Profile</h1> <!--この見出しを中央配置にする-->
           <p>名前：井上　純子</p>  <!--このp段落に対して::before改行content: "◆";のスタイルを適用する-->
           <p>生年月日：1991年3月3日</p>
@@ -33,38 +30,39 @@
           <p>趣味：Netflix鑑賞、ジムで運動、推し活、旅行</p>
           <p>好きなアーティスト：BTS</p>
           <p>好きな食べ物：韓国料理（特にビビンバやチヂミ<span>♡</span>）</p>
-          </section>
-        </div>
+          <p>プログラミング学習を始めたきっかけ：コロナをきっかけ、また30代に入ってから、場所にとらわれない、将来もずっと武器できるスキル、<br>
+            市場価値を付けたいと思い、興味を持ちだした。2022年に休職していたときに動物（特に犬）が好きになり、保護犬のことを知った。犬との生活を大事にしながら柔軟な働き方ができるwebエンジニアを目指したいと思うようになった。</p>
+           <p>学習への意気込み：無理はしすぎず、ただ自分の、「なぜ？」と追及できる長所を生かしてプログラミング初心者から経験エンジニアと渡り合える、仕事としていけるように楽しみながら続けていきたい！！</p>
+        </article>
 
-      <div id="container">  
+      <article class="SNS">
+       <div class="container">
         <h1>SNS</h1><br><br>  <!--SNSのリンクをすべて横並びにする。見出しは中央配置にするdisplayプロパティでinline-blockを指定する-->
-        <div class="container2">  
-        <div class="item01">  <!--背景色を薄い赤色にする。-->
+        <div class="item">
+          <div class="instagram">
             <h2 id="heading">Instagram</h2>
             <a href="https://www.instagram.com/jnk33kim/"><img id="logos" src="/Myprofile2/images/Instagram_Glyph_Gradient.png" width="150px", height="150px"></a>
-            <!--インスタグラムの見出しとiframeを中央配置にする-->
           </div>
 
-          <div class="item02">  <!--背景色を薄い黄色にする-->
+          <div class="facebook">  <!--背景色を薄い黄色にする-->
             <h2 id="heading">Facebook</h2>
             <a href="https://www.facebook.com/junko.inoue.71"><img src="/Myprofile2/images/f_logo_RGB-Blue_100.png" id="logos"></a>
-            <!--FBの見出しを中央配置にする-->
           </div>
 
-          <div class="item03">  <!--背景色を薄い青色にする-->
+          <div class="youtube">  <!--背景色を薄い青色にする-->
             <h2 id="heading">Youtube</h2>
             <p>大学時代ダンス部に所属していてHiphopを習っていました。</p>
             <a href="https://www.youtube.com/watch?v=lmJao92PBSE&t=2s"><img src="/Myprofile2/images/yt_icon_rgb.png" id="logos"></a>
-            <!--youtubeの見出しとiframeをitem03の中で中央配置にする。Youtubeのサムネイル表示ができない。-->
-          </div>    
-        </div>
+          </div>  
+       </div>
       </div>
+    </article>
 
-      </main>
+    <button id="backBtn">TOPに戻る</button>
+    <script src="#"></script>
+   </main>
       <footer>
       </footer>
 
-      </body>
-
-
-</html>
+  </body>
+ </html>
