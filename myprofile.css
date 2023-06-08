@@ -1,37 +1,83 @@
 
-.menu {
-  position: fixed;
-  top: 0;
+.header__nav {
+  position: absolute;
   right: 0;
-  padding: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: ease .4s;  /*これは何のコード？後で調べる*/
+}
+@media screen and (min-width: 960px) {
+  .header__nav {
+    position: static;
+    transform: initial;
+    background-color: inherit;  /*inheritとは親要素のスタイルを継承させるときに指定するもの。継承できるのは文字サイズ、太さ、文字の色*/
+    height: inherit;
+    justify-content: end;
+    width: 50%;
+  }
 }
 
-
-#menubar {
-  background-color: #696969; /*widthを何も指定しなければ画面幅いっぱいに背景色が広がる*/
-  height: 77px;
-  text-align: right;
-  color: white;  /*文字色を白に設定したが青になってしまう…*/
-  font-size: 30px;
-  margin-bottom: 20px;
+@media screen and (min-width: 960px) {
+  .nav__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: initial;
+    justify-content: space-between;
+  }
 }
 
-.menubarcontent a:link {
+.nav-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+@media screen and (min-width: 960px) {
+  .nav-items {
+    position: inherit;
+    top: o;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.nav-items__item a {
+  color: black;
+  width: 100%;
+  display: block;     /*スマホのときは各メニューが縦並びになる*/
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  .nav-items__item a {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.nav-items__item a:link {
   color: white;
 }
-
-.menubarcontent a:visited {
+.nav-items__item a:visited {
   color: white;
 }
-
-.menubarcontent a:hover {
+.nav-items__item a:hover {
   color: pink;
 }
-
-.menubarcontent a:active {
+.nav-items__item a:active {
   color: pink;
 }
-  
+ 
 .basicinfoa {
   margin-top: 70px;
   margin-bottom: 0px;
