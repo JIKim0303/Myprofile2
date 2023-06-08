@@ -105,71 +105,80 @@
   display: block;
 }
 
-.basicinfoa {
-  margin-top: 70px;
-  margin-bottom: 0px;
+.hamburger span:nth-child(1) {
+  top: 0;
 }
 
-.basicinfo1 {
-  background-color: #f0fff0;   /*メインタグに対して背景色を設定しても色は変わらず、basicinfoというdiv要素（id名）もしくはbasicinfo1というdivクラス名に対して背景色を設定したら色が変化した。*/
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: center;
-  padding-bottom: 0px;
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
 }
 
-.basicinfo1 h1 {
-  font-size: 50px;
+.hamburger span:nth-child(3) {
+  top: 0;
 }
 
-.basicinfo1 p {
-  margin-top: 1px;
-  font-size: 25px;
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
 }
 
-.basicinfo1 p::before {
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+}
+
+
+
+.profile p::before {
   content: "◆";
   color: purple;
 }
 
-.basicinfo1 span {
+.profile span {
   color: red;
 }
 
-#container {
+.container {
   background-color: #fff0f5;
-  background-size: cover;
-  height: 2500px;
-  margin-top: 0px;
+  height: cover;
+  width: 50%;
+  margin-top: 0;
+  display: inline-block;
+  position: relative;
 }
-
-#container h1{
-  font-size: 50px;
+@media screen and (min-width: 960px) {
+  .container {
+    background-color: inherit;
+    background-size: cover;
+    height: 2500px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+  .container h1 {
+    font-size: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+@media screen and (min-width:960px) {
+.container h1{
+  font-size: 30px;
   margin-top: 1px;
   margin-bottom: 1px;
   text-align: center;
-}
-
-.container2 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#container h2 {
-  font-size: 30px;
-}
-
-/*add a hover effect*/
-#logos:hover {  /*それぞれのSNSのアイコンに対してopacityを指定する。*/
-  opacity: 0.7;
-}
-
-.item01 {
-  width: 300px;
-  height: 300px;
-  background-color: none;
-  border: solid 5px red;
+  }
 }
 
 #heading {
@@ -177,67 +186,133 @@
   margin-bottom: 0px;
 }
 
-.item01 img {
-  display: block;    /*imgタグ（インスタのロゴ）に対してdiplay: blockにして、margin:auto;にしたら赤枠の中心に配置された*/
+/*add a hover effect*/
+#logos:hover {  /*それぞれのSNSのアイコンに対してopacityを指定する。*/
+  opacity: 0.7;
+}
+
+.instagram {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  border: solid 5px red;
+}
+@media screen and (min-width:960px;) {
+  .instagram {
+    position: absolute;
+    top: 50px;
+    left: 50px
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    border: solid 5px red;
+  }
+}
+
+.instagram img {
+  display: block;
   margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (min-width: 960px) {
+  .instagram img {
+    display: block;    /*imgタグ（インスタのロゴ）に対してdiplay: blockにして、margin:auto;にしたら赤枠の中心に配置された*/
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.facebook {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  border: solid 5px yellow;
+}
+@media screen and (min-width: 960px) {
+  .facebook {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: none;
+    border: solid 5px yellow;  /*この行の下にdisplay: flex;と記述したことで、h2要素とimg要素が横並びになったようなので削除した。*/
+  }
+}
+
+.facebook img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (min-width: 960px){
+  .facebook img {
+  display: block;  /*item02で指定したdisplay: block;を削除して、イメージ要素に対してblockをつけた。*/
+  margin: 0 auto
   width: 200px;
   height: 200px;
+  }
 }
 
-.item02 {
-  height: 300px;
-  width: 300px;
-  background-color: none;
-  border: solid 5px yellow;  /*この行の下にdisplay: flex;と記述したことで、h2要素とimg要素が横並びになったようなので削除した。*/
-}
-
-.item02 img{
-  display: block;  /*item02で指定したdisplay: block;を削除して、イメージ要素に対してblockをつけた。*/
-  margin: 0 auto;
-}
-
-.item03 {
-  height: 300px;
-  width: 300px;
+.youtube {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  height: 100px;
+  width: 100px;
   background-color: none;
   border: solid 5px blue;
 }
+@media screen and (min-width: 960px) {
+  .youtube {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: none;
+    border: solid 5px blue;
+  }
+}
 
-.item03 p {
+.youtube p {
   margin-top: 0px;
 }
 
-.item03 img{
+.youtube img{
   display: block;
   margin: 0 auto;
-  height: 150px;
-  width: 170px;
+  height: 80px;
+  width: 60px;
+}
+@media screen and (min-width: 960px) {
+  .youtube img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 170px;
+  }
 }
 
-.item03 p {
+.youtube p {
   padding: 0px;
   margin: 1px;
 }
 
-.item03 iframe {   /*iframeはやめたためこのコードは無効。*/
-  display: block;
-  margin: auto;
+.backBtn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 50%;
 }
-
-
-
-/*以下のCSSはワークしない*/
-.fist {
-  width: 90px;   /*firstクラスの中にあるimgタグに対して、画像の大きさをCSSで指定しても反応しない。HTMLで指定しないとダメ*/
-  height: 90px;
-}
-
-/*画面が480px以下の場合は背景色を赤色にする（テスト）*/
-@media screen(max-width: 480px) {
-  .body {
-    back-ground-color: red;
-    width: 50%;
-    font-size: 50%;
-  }
-}
-
