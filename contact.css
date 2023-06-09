@@ -2,6 +2,14 @@
   font-family: "Meiryo", sans-serif;
 }
 
+.container {
+  background-color: pink;
+  height: cover;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
   .container {
     background-color: pink;
     height: cover;
@@ -9,87 +17,87 @@
     margin: 0 auto;
     font-size: 25px;
   }
+} 
 
-@media screen and (max-width: 768px) {
-  .container {
-    background-color: red;
-    height: cover;
-    width: 70%;
+  .item {
+    display: block;
     margin: 0 auto;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    background-color: red;
+    text-align: center;
+    background-color: white;
     height: cover;
     width: 50%;
-    margin: 0 auto;
-    font-size: 12px;
   }
-}
-
-.item {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  background-color: white;
-  height: cover;
-  width: 717px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 960px) {
   .item {
     display: block;
     margin: 0 auto;
     text-align: center;
-    background-color: pink;
+    background-color: white;
     height: cover;
-    width: 500px;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .item {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    background-color: pink;
-    height: cover;
-    width: 358px;
-    font-size: 12px;
+    width: 717px;
   }
 }
 
 .name {
-  width: 50%;
+  width: 20%;
   padding: 1em 0.5em;
   line-height: 1;
-  font-size: 15px;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
+  .name {
+    width: 50%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    font-size: 20px;
+  }
 }
 
 .email {
-  width: 50%;
+  width: 20%;
   padding: 1em 0.5em;
   line-height: 1;
-  font-size: 15px;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
+  .email {
+    width: 50%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    font-size: 15px;
+  }
 }
 
 .phoneno {
-  width: 50%;
+  width: 20%;
   padding: 1em 0.5em;
   line-height: 1;
-  font-size: 15px;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
+  .phoneno {
+    width: 50%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    font-size: 15px;
+  }
 }
 
 #submission {
-  width: 25%;
+  width: 15%;
   padding: 1em 0.5em;
   line-height: 1;
   text-align: center;
 }
+@media screen and (min-width: 960px) {
+  #submission {
+    width: 25%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
 
 .backtohome {
   text-align: left;
