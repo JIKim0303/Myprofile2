@@ -6,7 +6,6 @@
   background-color: pink;
   height: cover;
   width: 50%;
-  margin: 0 auto;
   font-size: 10px;
 }
 @media screen and (min-width: 960px) {
@@ -14,7 +13,6 @@
     background-color: pink;
     height: cover;
     width: 100%;
-    margin: 0 auto;
     font-size: 25px;
   }
 } 
